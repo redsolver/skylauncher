@@ -20,10 +20,10 @@ Currently in beta.
 
 ## Permissions
 
-`android.permission.INTERNET`: Needed for some built-in widgets, not fully implemented yet
-`android.permission.READ_EXTERNAL_STORAGE` and `android.permission.WRITE_EXTERNAL_STORAGE`: Used for exporting the launcher data / creating a backup
-`net.dinglisch.android.tasker.PERMISSION_RUN_TASKS`: Used for Tasker integration, not fully implemented yet
-`android.permission.REQUEST_DELETE_PACKAGES`: Used when trying to uninstall an app
-`android.permission.BIND_APPWIDGET`: Used for embedding native Android Widgets
-`android.permission.EXPAND_STATUS_BAR`: Needed by the button to pull down the notification shade
-`android.permission.RECEIVE_BOOT_COMPLETED`: Used to start launcher on boot
+- `android.permission.INTERNET`: Needed for some built-in widgets, not fully implemented yet
+- `android.permission.READ_EXTERNAL_STORAGE` and `android.permission.WRITE_EXTERNAL_STORAGE`: Used for exporting the launcher data / creating a backup
+- `net.dinglisch.android.tasker.PERMISSION_RUN_TASKS`: Used for Tasker integration, not fully implemented yet
+- `android.permission.REQUEST_DELETE_PACKAGES`: Used when trying to uninstall an app
+- `android.permission.BIND_APPWIDGET`: Used for embedding native Android Widgets
+- `android.permission.EXPAND_STATUS_BAR`: Needed by the button to pull down the notification shade
+- `android.permission.RECEIVE_BOOT_COMPLETED`: Used to start launcher on boot
