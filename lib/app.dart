@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive/hive.dart';
-import 'package:skylauncher/interfaces/homeassistant.dart';
+// import 'package:skylauncher/interfaces/homeassistant.dart';
 
 const methodChannel = const MethodChannel('net.redsolver.skylauncher/native');
 

@@ -1,28 +1,23 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:ffi';
 import 'dart:io';
 import 'dart:math';
-import 'dart:typed_data';
 
 import 'package:android_intent/android_intent.dart';
 import 'package:app_uninstaller/app_uninstaller.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fuzzy/fuzzy.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:device_apps/device_apps.dart';
 
 import 'package:notification_shade/notification_shade.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:settings_panel_android/settings_panel_android.dart';
 import 'package:share/share.dart';
 import 'package:shortcuts/shortcuts.dart';
 import 'package:skylauncher/app.dart';
 import 'package:skylauncher/app_theme.dart';
-import 'package:skylauncher/interfaces/homeassistant.dart';
 import 'package:skylauncher/util/theme_data.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 
@@ -751,7 +746,7 @@ class _HomePageState extends State<HomePage> {
                                   .getExternalStorageDirectory();
 
                               final file = File(
-                                  '${dir.path}/SkyDroid-Launcher-Export-${DateTime.now()}.json');
+                                  '${dir.path}/SkyLauncher-Export-${DateTime.now()}.json');
 
                               file.writeAsStringSync(json.encode({
                                 'data': dataBox.toMap(),
@@ -759,7 +754,7 @@ class _HomePageState extends State<HomePage> {
                               }));
                               Share.shareFiles(
                                 [file.path],
-                                text: 'SkyDroid Launcher Export',
+                                text: 'SkyLauncher Export',
                               );
                             }
                           },
